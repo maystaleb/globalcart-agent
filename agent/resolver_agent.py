@@ -34,7 +34,7 @@ from typing import Any, Dict, List, Optional
 
 import anthropic
 
-# The business tool box lives in starter-kit/, untouched, one level up.
+# The business tool box lives in starter-kit , untouched, one level up.
 STARTER_KIT = Path(__file__).resolve().parent.parent / "starter-kit"
 sys.path.insert(0, str(STARTER_KIT))
 
