@@ -1,0 +1,7 @@
+# Dependencies for the Operations Resolver Agent itself.
+# The starter-kit tool box (starter-kit/mock_services.py) needs nothing beyond
+# the standard library; see starter-kit/requirements.txt for the optional
+# Swagger UI server dependencies.
+
+anthropic>=0.34
+python-dotenv>=1.0

@@ -1,0 +1,143 @@
+{
+  "_comment": "GlobalCart customer profiles (mock). Read-only fixture for Quest #04. Do not edit.",
+  "users": [
+    {
+      "user_id": "USR-101",
+      "name": "Maya Levi",
+      "email": "maya.levi@example.com",
+      "tier": "VIP",
+      "account_created_at": "2023-03-11",
+      "country": "IL",
+      "lifetime_value": 4820.5,
+      "orders_count": 37,
+      "refund_history": [
+        { "order_id": "ORD-0812", "amount": 22.0, "date": "2025-11-04", "reason": "damaged_on_arrival" }
+      ],
+      "prior_fraud_flags": 0,
+      "initial_fraud_score": 5,
+      "sentiment_history": "consistently polite; long-tenured customer"
+    },
+    {
+      "user_id": "USR-102",
+      "name": "Daniel Peretz",
+      "email": "daniel.peretz@example.com",
+      "tier": "Standard",
+      "account_created_at": "2024-09-02",
+      "country": "IL",
+      "lifetime_value": 690.0,
+      "orders_count": 9,
+      "refund_history": [],
+      "prior_fraud_flags": 0,
+      "initial_fraud_score": 8,
+      "sentiment_history": "no prior complaints"
+    },
+    {
+      "user_id": "USR-103",
+      "name": "Noa Bar-On",
+      "email": "noa.baron@example.com",
+      "tier": "Standard",
+      "account_created_at": "2025-01-19",
+      "country": "IL",
+      "lifetime_value": 415.0,
+      "orders_count": 6,
+      "refund_history": [
+        { "order_id": "ORD-0955", "amount": 18.5, "date": "2026-03-22", "reason": "wrong_item" }
+      ],
+      "prior_fraud_flags": 0,
+      "initial_fraud_score": 12,
+      "sentiment_history": "one prior wrong-item complaint, resolved"
+    },
+    {
+      "user_id": "USR-104",
+      "name": "Yossi Adler",
+      "email": "yossi.adler@example.com",
+      "tier": "Standard",
+      "account_created_at": "2024-05-30",
+      "country": "IL",
+      "lifetime_value": 1130.0,
+      "orders_count": 14,
+      "refund_history": [
+        { "order_id": "ORD-0740", "amount": 31.0, "date": "2025-08-15", "reason": "late_delivery" }
+      ],
+      "prior_fraud_flags": 0,
+      "initial_fraud_score": 10,
+      "sentiment_history": "frustrated by shipping delays in the past"
+    },
+    {
+      "user_id": "USR-105",
+      "name": "Ronen Katz",
+      "email": "ronen.katz@example.com",
+      "tier": "Standard",
+      "account_created_at": "2026-04-08",
+      "country": "IL",
+      "lifetime_value": 1290.0,
+      "orders_count": 8,
+      "refund_history": [
+        { "order_id": "ORD-1013", "amount": 96.0, "date": "2026-07-04", "reason": "damaged_on_arrival" },
+        { "order_id": "ORD-0998", "amount": 145.0, "date": "2026-07-12", "reason": "item_missing" },
+        { "order_id": "ORD-1001B", "amount": 210.0, "date": "2026-07-25", "reason": "damaged_on_arrival" }
+      ],
+      "prior_fraud_flags": 1,
+      "initial_fraud_score": 61,
+      "sentiment_history": "escalates quickly; three refund claims in the last 45 days"
+    },
+    {
+      "user_id": "USR-106",
+      "name": "Shira Mizrahi",
+      "email": "shira.mizrahi@example.com",
+      "tier": "Standard",
+      "account_created_at": "2025-06-14",
+      "country": "IL",
+      "lifetime_value": 320.0,
+      "orders_count": 4,
+      "refund_history": [],
+      "prior_fraud_flags": 0,
+      "initial_fraud_score": 7,
+      "sentiment_history": "no prior complaints"
+    },
+    {
+      "user_id": "USR-107",
+      "name": "Avi Gordon",
+      "email": "avi.gordon@example.com",
+      "tier": "VIP",
+      "account_created_at": "2022-11-25",
+      "country": "IL",
+      "lifetime_value": 7310.0,
+      "orders_count": 58,
+      "refund_history": [
+        { "order_id": "ORD-0601", "amount": 60.0, "date": "2025-02-09", "reason": "wrong_item" }
+      ],
+      "prior_fraud_flags": 0,
+      "initial_fraud_score": 4,
+      "sentiment_history": "high-value loyal customer"
+    },
+    {
+      "user_id": "USR-108",
+      "name": "Lina Haddad",
+      "email": "lina.haddad@example.com",
+      "tier": "Standard",
+      "account_created_at": "2025-10-03",
+      "country": "IL",
+      "lifetime_value": 505.0,
+      "orders_count": 5,
+      "refund_history": [],
+      "prior_fraud_flags": 0,
+      "initial_fraud_score": 9,
+      "sentiment_history": "no prior complaints"
+    },
+    {
+      "user_id": "USR-109",
+      "name": "Tomer Sela",
+      "email": "tomer.sela@example.com",
+      "tier": "Standard",
+      "account_created_at": "2026-07-28",
+      "country": "IL",
+      "lifetime_value": 890.0,
+      "orders_count": 1,
+      "refund_history": [],
+      "prior_fraud_flags": 0,
+      "initial_fraud_score": 44,
+      "sentiment_history": "brand-new account, first order is high value"
+    }
+  ]
+}

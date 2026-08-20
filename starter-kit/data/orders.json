@@ -1,0 +1,397 @@
+{
+  "_comment": "GlobalCart order database (mock). Read-only fixture for Quest #04. Do not edit.",
+  "orders": [
+    {
+      "order_id": "ORD-1001",
+      "user_id": "USR-101",
+      "status": "delivered",
+      "order_date": "2026-07-20",
+      "delivery_date": "2026-07-25",
+      "total_amount": 35.0,
+      "currency": "USD",
+      "channel": "web",
+      "items": [
+        {
+          "sku": "SKU-HDPH-01",
+          "name": "GlobalCart Wired Earbuds",
+          "category": "electronics",
+          "qty": 1,
+          "unit_price": 35.0,
+          "condition": "damaged_on_arrival"
+        }
+      ],
+      "shipping_address": {
+        "line1": "14 Rothschild Blvd",
+        "city": "Tel Aviv",
+        "country": "IL",
+        "postal_code": "6688101"
+      },
+      "address_changed_at": null,
+      "payment_method_last4": "4417"
+    },
+    {
+      "order_id": "ORD-1002",
+      "user_id": "USR-102",
+      "status": "delivered",
+      "order_date": "2026-07-15",
+      "delivery_date": "2026-07-22",
+      "total_amount": 150.0,
+      "currency": "USD",
+      "channel": "web",
+      "items": [
+        {
+          "sku": "SKU-ESPR-07",
+          "name": "GlobalCart Espresso Machine",
+          "category": "home_appliances",
+          "qty": 1,
+          "unit_price": 150.0,
+          "condition": "damaged_on_arrival"
+        }
+      ],
+      "shipping_address": {
+        "line1": "8 Ibn Gabirol St",
+        "city": "Tel Aviv",
+        "country": "IL",
+        "postal_code": "6407807"
+      },
+      "address_changed_at": null,
+      "payment_method_last4": "9910"
+    },
+    {
+      "order_id": "ORD-1003",
+      "user_id": "USR-103",
+      "status": "delivered",
+      "order_date": "2026-05-30",
+      "delivery_date": "2026-06-06",
+      "total_amount": 42.5,
+      "currency": "USD",
+      "channel": "mobile_app",
+      "items": [
+        {
+          "sku": "SKU-BKPK-03",
+          "name": "GlobalCart Commuter Backpack",
+          "category": "accessories",
+          "qty": 1,
+          "unit_price": 42.5,
+          "condition": "new"
+        }
+      ],
+      "shipping_address": {
+        "line1": "22 Herzl St",
+        "city": "Haifa",
+        "country": "IL",
+        "postal_code": "3303321"
+      },
+      "address_changed_at": null,
+      "payment_method_last4": "3120"
+    },
+    {
+      "order_id": "ORD-1004",
+      "user_id": "USR-104",
+      "status": "delayed",
+      "order_date": "2026-07-29",
+      "delivery_date": null,
+      "total_amount": 78.9,
+      "currency": "USD",
+      "channel": "web",
+      "items": [
+        {
+          "sku": "SKU-DESK-12",
+          "name": "GlobalCart Standing Desk Riser",
+          "category": "furniture",
+          "qty": 1,
+          "unit_price": 78.9,
+          "condition": "new"
+        }
+      ],
+      "shipping_address": {
+        "line1": "5 Jaffa St",
+        "city": "Jerusalem",
+        "country": "IL",
+        "postal_code": "9422105"
+      },
+      "address_changed_at": null,
+      "payment_method_last4": "2288"
+    },
+    {
+      "order_id": "ORD-1005",
+      "user_id": "USR-105",
+      "status": "delivered",
+      "order_date": "2026-07-24",
+      "delivery_date": "2026-07-31",
+      "total_amount": 480.0,
+      "currency": "USD",
+      "channel": "web",
+      "items": [
+        {
+          "sku": "SKU-TABL-09",
+          "name": "GlobalCart Tablet Pro 11",
+          "category": "electronics",
+          "qty": 1,
+          "unit_price": 480.0,
+          "condition": "damaged_on_arrival"
+        }
+      ],
+      "shipping_address": {
+        "line1": "3 Ha-Namal St",
+        "city": "Ashdod",
+        "country": "IL",
+        "postal_code": "7761001"
+      },
+      "address_changed_at": "2026-07-29",
+      "payment_method_last4": "7734"
+    },
+    {
+      "order_id": "ORD-1006",
+      "user_id": "USR-101",
+      "status": "shipped",
+      "order_date": "2026-08-01",
+      "delivery_date": null,
+      "total_amount": 119.0,
+      "currency": "USD",
+      "channel": "mobile_app",
+      "items": [
+        {
+          "sku": "SKU-CHAR-05",
+          "name": "GlobalCart Fast Charger Kit",
+          "category": "electronics",
+          "qty": 2,
+          "unit_price": 59.5,
+          "condition": "new"
+        }
+      ],
+      "shipping_address": {
+        "line1": "14 Rothschild Blvd",
+        "city": "Tel Aviv",
+        "country": "IL",
+        "postal_code": "6688101"
+      },
+      "address_changed_at": null,
+      "payment_method_last4": "4417"
+    },
+    {
+      "order_id": "ORD-1007",
+      "user_id": "USR-106",
+      "status": "processing",
+      "order_date": "2026-08-03",
+      "delivery_date": null,
+      "total_amount": 64.0,
+      "currency": "USD",
+      "channel": "web",
+      "items": [
+        {
+          "sku": "SKU-LAMP-02",
+          "name": "GlobalCart LED Desk Lamp",
+          "category": "home_appliances",
+          "qty": 2,
+          "unit_price": 32.0,
+          "condition": "new"
+        }
+      ],
+      "shipping_address": {
+        "line1": "40 Weizmann St",
+        "city": "Kfar Saba",
+        "country": "IL",
+        "postal_code": "4424040"
+      },
+      "address_changed_at": null,
+      "payment_method_last4": "5501"
+    },
+    {
+      "order_id": "ORD-1008",
+      "user_id": "USR-107",
+      "status": "delivered",
+      "order_date": "2026-07-27",
+      "delivery_date": "2026-07-30",
+      "total_amount": 29.99,
+      "currency": "USD",
+      "channel": "web",
+      "items": [
+        {
+          "sku": "SKU-GIFT-01",
+          "name": "GlobalCart Digital Gift Card",
+          "category": "digital_goods",
+          "qty": 1,
+          "unit_price": 29.99,
+          "condition": "new"
+        }
+      ],
+      "shipping_address": {
+        "line1": "11 Sokolov St",
+        "city": "Ramat Gan",
+        "country": "IL",
+        "postal_code": "5262011"
+      },
+      "address_changed_at": null,
+      "payment_method_last4": "8802"
+    },
+    {
+      "order_id": "ORD-1009",
+      "user_id": "USR-108",
+      "status": "cancelled",
+      "order_date": "2026-07-18",
+      "delivery_date": null,
+      "total_amount": 210.0,
+      "currency": "USD",
+      "channel": "web",
+      "items": [
+        {
+          "sku": "SKU-VACU-06",
+          "name": "GlobalCart Cordless Vacuum",
+          "category": "home_appliances",
+          "qty": 1,
+          "unit_price": 210.0,
+          "condition": "new"
+        }
+      ],
+      "shipping_address": {
+        "line1": "17 Bialik St",
+        "city": "Rishon LeZion",
+        "country": "IL",
+        "postal_code": "7530817"
+      },
+      "address_changed_at": null,
+      "payment_method_last4": "6640"
+    },
+    {
+      "order_id": "ORD-1010",
+      "user_id": "USR-102",
+      "status": "delivered",
+      "order_date": "2026-07-26",
+      "delivery_date": "2026-08-01",
+      "total_amount": 48.0,
+      "currency": "USD",
+      "channel": "mobile_app",
+      "items": [
+        {
+          "sku": "SKU-KTTL-04",
+          "name": "GlobalCart Electric Kettle",
+          "category": "home_appliances",
+          "qty": 1,
+          "unit_price": 48.0,
+          "condition": "damaged_on_arrival"
+        }
+      ],
+      "shipping_address": {
+        "line1": "8 Ibn Gabirol St",
+        "city": "Tel Aviv",
+        "country": "IL",
+        "postal_code": "6407807"
+      },
+      "address_changed_at": null,
+      "payment_method_last4": "9910"
+    },
+    {
+      "order_id": "ORD-1011",
+      "user_id": "USR-103",
+      "status": "delivered",
+      "order_date": "2026-07-21",
+      "delivery_date": "2026-07-28",
+      "total_amount": 52.0,
+      "currency": "USD",
+      "channel": "web",
+      "items": [
+        {
+          "sku": "SKU-MOUS-08",
+          "name": "GlobalCart Ergonomic Mouse",
+          "category": "electronics",
+          "qty": 1,
+          "unit_price": 52.0,
+          "condition": "damaged_on_arrival"
+        }
+      ],
+      "shipping_address": {
+        "line1": "22 Herzl St",
+        "city": "Haifa",
+        "country": "IL",
+        "postal_code": "3303321"
+      },
+      "address_changed_at": null,
+      "payment_method_last4": "3120"
+    },
+    {
+      "order_id": "ORD-1012",
+      "user_id": "USR-109",
+      "status": "delivered",
+      "order_date": "2026-07-30",
+      "delivery_date": "2026-08-02",
+      "total_amount": 890.0,
+      "currency": "USD",
+      "channel": "web",
+      "items": [
+        {
+          "sku": "SKU-LPTP-15",
+          "name": "GlobalCart UltraBook 14",
+          "category": "electronics",
+          "qty": 1,
+          "unit_price": 890.0,
+          "condition": "missing"
+        }
+      ],
+      "shipping_address": {
+        "line1": "60 Ha-Yarkon St",
+        "city": "Bat Yam",
+        "country": "IL",
+        "postal_code": "5942060"
+      },
+      "address_changed_at": "2026-08-01",
+      "payment_method_last4": "1195"
+    },
+    {
+      "order_id": "ORD-1013",
+      "user_id": "USR-105",
+      "status": "delivered",
+      "order_date": "2026-06-20",
+      "delivery_date": "2026-06-27",
+      "total_amount": 96.0,
+      "currency": "USD",
+      "channel": "web",
+      "items": [
+        {
+          "sku": "SKU-BLND-11",
+          "name": "GlobalCart Personal Blender",
+          "category": "home_appliances",
+          "qty": 1,
+          "unit_price": 96.0,
+          "condition": "new"
+        }
+      ],
+      "shipping_address": {
+        "line1": "3 Ha-Namal St",
+        "city": "Ashdod",
+        "country": "IL",
+        "postal_code": "7761001"
+      },
+      "address_changed_at": null,
+      "payment_method_last4": "7734"
+    },
+    {
+      "order_id": "ORD-1014",
+      "user_id": "USR-104",
+      "status": "delivered",
+      "order_date": "2026-07-25",
+      "delivery_date": "2026-07-31",
+      "total_amount": 24.0,
+      "currency": "USD",
+      "channel": "mobile_app",
+      "items": [
+        {
+          "sku": "SKU-CABL-10",
+          "name": "GlobalCart USB-C Cable 2m",
+          "category": "electronics",
+          "qty": 2,
+          "unit_price": 12.0,
+          "condition": "wrong_item"
+        }
+      ],
+      "shipping_address": {
+        "line1": "5 Jaffa St",
+        "city": "Jerusalem",
+        "country": "IL",
+        "postal_code": "9422105"
+      },
+      "address_changed_at": null,
+      "payment_method_last4": "2288"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "_comment": "GlobalCart business rules (mock). Read-only fixture for Quest #04. Do not edit.",
+  "reference_date": "2026-08-05",
+  "_reference_date_note": "All date arithmetic in mock_services.py is measured against this date so that results stay deterministic over time. Override with the QUEST4_REFERENCE_DATE environment variable if you want to test other points in time.",
+
+  "currency": "USD",
+  "return_window_days": 30,
+  "auto_refund_cap_usd": 50.0,
+
+  "vip_overrides": {
+    "return_window_days": 45,
+    "auto_refund_cap_usd": 75.0,
+    "_note": "Applies only to users whose tier is 'VIP'."
+  },
+
+  "non_returnable_categories": ["digital_goods", "perishables", "gift_cards"],
+
+  "eligible_return_reasons": [
+    "damaged_on_arrival",
+    "wrong_item",
+    "item_missing",
+    "late_delivery",
+    "changed_mind"
+  ],
+
+  "refundable_order_statuses": ["delivered", "shipped"],
+
+  "policies": [
+    {
+      "policy_id": "POL-RET-01",
+      "title": "Standard return window",
+      "description": "A return or refund request must be opened within 30 calendar days of the delivery date. Requests opened after the window are rejected."
+    },
+    {
+      "policy_id": "POL-RET-02",
+      "title": "Extended VIP return window",
+      "description": "Customers on the VIP tier get a 45 calendar day return window instead of 30."
+    },
+    {
+      "policy_id": "POL-REF-01",
+      "title": "Automatic refund authority",
+      "description": "An agent may approve a refund automatically up to 50.00 USD. Any amount above that requires human approval and must be escalated."
+    },
+    {
+      "policy_id": "POL-REF-02",
+      "title": "Extended VIP refund authority",
+      "description": "For VIP customers the automatic refund cap is 75.00 USD."
+    },
+    {
+      "policy_id": "POL-REF-03",
+      "title": "Non-returnable categories",
+      "description": "Digital goods, perishables and gift cards cannot be returned or refunded regardless of amount or customer tier."
+    },
+    {
+      "policy_id": "POL-REF-04",
+      "title": "Order must have shipped",
+      "description": "A refund can only be processed for an order whose status is 'delivered' or 'shipped'. Orders in 'processing' or 'cancelled' must be handled by billing, not by refund."
+    },
+    {
+      "policy_id": "POL-ESC-01",
+      "title": "Escalate on refund risk",
+      "description": "Escalate to a human operations lead when the requested amount exceeds the automatic cap, when the customer's fraud score is 60 or higher, or when the customer has any prior fraud flag."
+    },
+    {
+      "policy_id": "POL-ESC-02",
+      "title": "Escalate on repeat claims",
+      "description": "Escalate when the customer has opened 3 or more refund claims in the trailing 60 days, even if each individual amount is under the automatic cap."
+    }
+  ],
+
+  "escalation_required_when": [
+    { "condition": "requested_amount > auto_refund_cap", "policy_id": "POL-REF-01" },
+    { "condition": "user.initial_fraud_score >= 60", "policy_id": "POL-ESC-01" },
+    { "condition": "user.prior_fraud_flags > 0", "policy_id": "POL-ESC-01" },
+    { "condition": "refund_claims_in_last_60_days >= 3", "policy_id": "POL-ESC-02" }
+  ],
+
+  "repeat_claim_threshold": { "claims": 3, "window_days": 60 },
+  "high_fraud_score_threshold": 60
+}

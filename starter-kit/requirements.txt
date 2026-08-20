@@ -1,0 +1,17 @@
+# Only needed for the interactive API documentation (api_docs/app.py).
+#
+# mock_services.py itself runs on the Python standard library — you can import it
+# and build your agent without installing anything from this file.
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+
+# Your agent framework is your choice. Uncomment whichever you go with, or keep
+# it in a separate requirements file of your own.
+#
+# openai>=1.40
+# anthropic>=0.34
+# pydantic-ai>=0.0.14
+# crewai>=0.60
+# langgraph>=0.2
+# langchain-openai>=0.2
